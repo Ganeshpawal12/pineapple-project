@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 0px 80px;
+    align-items: center;
+    display: flex;
+    background-color: #f5f4f4;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: rgb(167 100 203);
+}
+
+.logo img {
+    width: 80px;
+    max-width: 100%;
+}
+
+.main {
+    border: 2px solid rgb(167 100 203);
+    border-radius: 5px;
+    padding: 0px 5px;
+    display: none;
+}
+
+.main .divider {
+    border: 2px solid rgb(0 89 207);
+    width: 20px;
+    margin: 5px 0px;
+}
+
+.nav {
+    background-color: rgb(59 234 249);
+}
+
+.nav-ul {
+    padding: 20px 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-ul ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #001685;
+}
+
+.nav-ul li a:hover {
+    color: rgb(0 83 199);
+}
+.search i{
+    position: absolute;
+    top: 105px;
+    right: 90px;
+}
+.search input {
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 2px;
+
+    padding: 5px;
+}
+
+/* top section */
+.top-section {
+    padding: 50px 0px;
+    margin: 0px 80px;
+    text-align: justify;
+    border-bottom: 2px dotted;
+}
+
+.top-section h1 {
+    margin-bottom: 20px;
+    color: #001685;
+}
+
+.top-sec-button,
+.project-btn {
+    text-align: right;
+}
+
+.top-sec-button button,
+.project-btn button {
+    margin-top: 20px;
+    padding: 0px 15px 0px 0px;
+    background-color: rgb(0 89 207);
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.top-sec-button button i,
+.project-btn button i {
+    margin-right: 5px;
+    color: black;
+    background: white;
+    padding: 10px 15px;
+    padding-right: 10px 40px;
+}
+
+/* mega development projects */
+.project-section {
+    padding: 50px 80px;
+}
+
+.project-section h1 {
+    color: #001685;
+    text-transform: uppercase;
+}
+
+.project-row-1,
+.project-row-2 {
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-col {
+    /* padding: 15px 10px; */
+    flex-basis: 30%;
+}
+
+.project-img {
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.project-img img {
+    /* border-radius: 5px; */
+    max-width: 100%;
+    height: 200px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.project-content {
+    padding: 15px 0px;
+    text-align: justify;
+}
+
+.project-content h3 {
+    margin-bottom: 10px;
+    color: #001685;
+}
+
+/* footer */
+footer {
+    background-color: rgb(59 234 249);
+
+}
+
+.footer-row {
+    padding: 50px 80px 30px 80px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot-col {
+    line-height: 30px;
+    margin: 0px 20px;
+}
+
+.join-us {
+    margin-top: 10px;
+}
+.join-icon .fa-tumblr {
+    text-shadow: 2px 2px #1e1c1c9e;
+    color: rgb(167 100 203);
+}
+
+.join-icon .fa-wifi {
+    background: orange;
+    color: white;
+    padding: 1px;
+    border-radius: 50%;
+}
+.fot-col h3 {
+    margin-bottom: 15px;
+    color: #001685;
+
+}
+
+.copyright {
+    padding: 10px 80px;
+    background-color: rgb(26, 218, 236);
+}
+
+.copy-row {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.copy-row .copy-col ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.copy-row .copy-col ul li a {
+    margin: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:769px) {
+    .nav-ul {
+        display: none;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .header {
+        padding: 0px 30px;
+    }
+
+    .nav-ul {
+        padding: 20px 30px;
+    }
+
+    .top-section {
+        padding: 40px 0px;
+        margin: 0px 30px;
+    }
+
+    /* project section */
+    .project-section {
+        padding: 40px 30px;
+    }
+
+    .project-row-1,
+    .project-row-2 {
+        flex-wrap: nowrap;
+    }
+
+    .project-col {
+        flex-basis: 30%;
+    }
+
+    .footer-row {
+        padding: 40px 30px 0px 30px;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+        padding: 10px 30px;
+    }
+
+    .copy-row {
+        flex-wrap: nowrap;
+    }
+    .copy-row .copy-col ul li a{
+        margin: 0px 10px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .header {
+        padding: 0px 20px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .top-section {
+        padding: 30px 0px;
+        margin: 0px 20px;
+    }
+
+    .top-sec-button {
+
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .project-row-1,
+    .project-row-2 {
+        flex-wrap: wrap;
+    }
+
+    .project-col {
+        flex-basis: 100%;
+    }
+
+    .project-btn {
+        text-align: center;
+    }
+
+    .project-btn button {
+        margin-top: 0px;
+    }
+
+    .project-section {
+        padding: 30px 20px;
+    }
+
+    .footer-row {
+        padding: 30px 20px 0px 20px;
+        flex-wrap: wrap;
+    }
+    .fot-col{
+        margin: 0px 0px 10px 0px;    }
+    .copyright {
+        padding: 5px 20px;
+    }
+
+    .copy-row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .copy-row .copy-col p {
+        font-size: 10px;
+    }
+
+    .copy-row .copy-col ul li a {
+        font-size: 10px;
+        margin: 0px 5px;
+    }
+}
